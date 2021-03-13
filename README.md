@@ -5,4 +5,5 @@
 A simple expo managed workflow boilerplate
 ## Tech Stack
 - React Native
+- TypeScript
 - React Navigation 5
