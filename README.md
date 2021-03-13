@@ -6,7 +6,7 @@
 - [x] basic eslint
 - [x] prettier
 - [x] jest
-- [ ] i18n
+- [x] i18n
 
 ## Tech Stack
 - React Native
