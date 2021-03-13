@@ -5,7 +5,7 @@
 ## To-do
 - [x] basic eslint
 - [x] prettier
-- [ ] jest
+- [x] jest
 - [ ] i18n
 
 ## Tech Stack
