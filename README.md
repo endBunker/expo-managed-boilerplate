@@ -8,3 +8,30 @@ A simple expo managed workflow boilerplate
 - TypeScript
 - React Navigation 5
 - Tailwind
+
+## File Structure
+```
+expo-boilerplate
+├── .expo
+├── asset
+├── config
+├── components
+│── i18n
+│── utils
+│── models
+│── navigation
+│── screens
+│── services
+│── theme
+├── test
+│   ├── __snapshots__
+│   ├── storyshots.test.ts.snap
+│   ├── mock-i18n.ts
+│   ├── mock-reactotron.ts
+│   ├── setup.ts
+│   ├── storyshots.test.ts
+├── README.md
+├── App.tsx
+├── .env
+└── package.json
+```
