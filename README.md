@@ -9,10 +9,11 @@ A simple expo managed workflow boilerplate
 - React Native
 - TypeScript
 - React Navigation 5
+- MobX-State-Tree
 
 ## File Structure
 
-```
+```markdown
 expo-boilerplate
 ├── .expo
 ├── asset
