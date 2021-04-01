@@ -6,10 +6,24 @@ A simple expo managed workflow boilerplate
 
 ## Tech Stack
 
-- React Native
-- TypeScript
-- React Navigation 5
-- MobX-State-Tree
+- Framework [Expo](https://expo.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- Linting with [ESLint](https://eslint.org/)
+- Formatting with [Prettier](https://prettier.io/)
+- Testing with [Jest](https://jestjs.io/) and [`jest-expo`](https://github.com/expo/expo/tree/master/packages/jest-expo)
+- Screen Navigation with [React Navigation 5](https://reactnavigation.org/)
+- State Management with [MobX](https://mobx.js.org/README.html), [`mobx-react-lite`](https://mobx.js.org/react-integration.html) and [MobX-State-Tree](https://mobx-state-tree.js.org/intro/welcome)
+- Internationalization with [`i18n-js`](https://github.com/fnando/i18n-js)
+
+## How to use
+
+### Installation
+
+```bash
+yarn
+# or
+npm install
+```
 
 ## File Structure
 
@@ -26,14 +40,10 @@ expo-boilerplate
 │── screens
 │── services
 │   ├── api
-│   ├── graphql
+│   └── graphql
 ├── test
 │   ├── __snapshots__
-│   ├── storyshots.test.ts.snap
-│   ├── mock-i18n.ts
-│   ├── mock-reactotron.ts
-│   ├── setup.ts
-│   ├── storyshots.test.ts
+│   └── __mock__
 │── theme
 │── utils
 ├── README.md

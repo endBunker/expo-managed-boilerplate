@@ -4,17 +4,22 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 
 import { Home } from './screens'
+import { Provider, initializeStore } from './models'
 
 const Stack = createStackNavigator()
 
 export default function App() {
+  const store = initializeStore()
+
   return (
-    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name='Home' component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
+    <Provider value={store}>
+      <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name='Home' component={Home} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </SafeAreaProvider>
+    </Provider>
   )
 }
