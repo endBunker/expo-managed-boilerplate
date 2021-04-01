@@ -6,7 +6,6 @@ A simple expo managed workflow boilerplate
 
 ## Tech Stack
 
-- Framework [Expo](https://expo.io/)
 - [Typescript](https://www.typescriptlang.org/)
 - Linting with [ESLint](https://eslint.org/)
 - Formatting with [Prettier](https://prettier.io/)
