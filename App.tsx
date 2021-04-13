@@ -3,8 +3,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 
-import { Home } from './screens'
-import { Provider, initializeStore } from './models'
+import { Home } from 'screens'
+import { Provider, initializeStore } from 'models'
 
 if (__DEV__) {
   require('./config/ReactotronConfig')
