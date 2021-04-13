@@ -6,6 +6,10 @@ import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-c
 import { Home } from './screens'
 import { Provider, initializeStore } from './models'
 
+if (__DEV__) {
+  require('./config/ReactotronConfig')
+}
+
 const Stack = createStackNavigator()
 
 export default function App() {

@@ -2,10 +2,6 @@ import { createContext, useContext } from 'react'
 import { Root, IRoot } from './Root'
 
 let _store: IRoot | null = null
-if (_store && __DEV__) {
-  const makeInspectable = require('mobx-devtools-mst')
-  makeInspectable(_store)
-}
 
 export function initializeStore() {
   _store = Root.create({ test: '' })
