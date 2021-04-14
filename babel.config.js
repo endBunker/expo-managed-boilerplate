@@ -30,6 +30,7 @@ module.exports = function (api) {
             '@i18n': 'i18n',
             '@models': './models',
             '@hooks': './hooks',
+            '@storage': './utils/storage',
           },
         },
       ],
