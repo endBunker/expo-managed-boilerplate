@@ -3,8 +3,12 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import { Home } from 'screens'
 
+type RootStack = {
+  Home: undefined
+}
+
 export const Root = () => {
-  const Stack = createStackNavigator()
+  const Stack = createStackNavigator<RootStack>()
 
   return (
     <Stack.Navigator>
