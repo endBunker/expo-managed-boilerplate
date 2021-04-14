@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-import i18n from '../../i18n'
+import i18n from 'i18n'
 
 export function Home() {
   return (
@@ -16,6 +16,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
     flex: 1,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 })

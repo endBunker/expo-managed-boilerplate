@@ -27,7 +27,7 @@ module.exports = function (api) {
             '@components': './components',
             '@navigation': './navigators',
             '@screens': './screens',
-            i18n: 'i18n',
+            '@i18n': 'i18n',
             '@models': './models',
             '@hooks': './hooks',
           },
