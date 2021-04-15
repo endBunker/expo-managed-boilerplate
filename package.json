@@ -1,16 +1,19 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
     "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "test": "jest",
-    "build:ios": "expo build:ios -t simulator",
     "build:android": "expo build:android -t apk",
+    "build:ios": "expo build:ios -t simulator",
     "build": "expo build",
-    "lint": "eslint"
+    "eject": "expo eject",
+    "format": "prettier --write .",
+    "ios": "expo start --ios",
+    "lint": "eslint",
+    "start": "expo start",
+    "test:All": "yarn test && yarn type-check && yarn lint",
+    "test": "jest -o",
+    "type-check": "tsc --pretty --noEmit",
+    "web": "expo start --web"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.2",
