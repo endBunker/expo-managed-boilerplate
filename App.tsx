@@ -3,7 +3,7 @@ import * as React from 'react'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 
 import { Provider, initializeStore } from 'models'
-import { Navigator } from './navigators'
+import { Navigator } from 'navigators'
 
 if (__DEV__) {
   require('./config/ReactotronConfig')
