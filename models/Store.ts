@@ -14,7 +14,7 @@ export async function initializeStore() {
   else store = Root.create(initialState)
 
   if (__DEV__) {
-    const { Mst } = require('../config/ReactotronConfig')
+    const { Mst } = require('../config/reactotron-config')
     Mst(store)
   }
 

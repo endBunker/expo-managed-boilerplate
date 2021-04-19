@@ -6,7 +6,7 @@ import { Provider, initializeStore, IRoot } from 'models'
 import { Navigator } from 'navigators'
 
 if (__DEV__) {
-  require('./config/ReactotronConfig')
+  require('./config/reactotron-config')
 }
 
 export default function App() {
