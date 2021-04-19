@@ -36,7 +36,8 @@
       ],
       "@themes": [
         "themes/*"
-      ],
+      ]
     }
-  }
+  },
+  "extends": "expo/tsconfig.base"
 }
