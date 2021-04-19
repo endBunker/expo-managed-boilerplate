@@ -34,6 +34,9 @@
       "@storage": [
         "utils/storage/*"
       ],
+      "@themes": [
+        "themes/*"
+      ],
     }
   }
 }

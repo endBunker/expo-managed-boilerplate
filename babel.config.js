@@ -31,6 +31,7 @@ module.exports = function (api) {
             '@models': './models',
             '@hooks': './hooks',
             '@storage': './utils/storage',
+            '@themes': './themes',
           },
         },
       ],
