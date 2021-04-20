@@ -17,3 +17,4 @@ export const Root = () => {
 }
 
 export default Root
+export * from './types'
