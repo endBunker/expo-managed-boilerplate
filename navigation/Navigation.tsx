@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { useColorScheme } from 'react-native'
 import { DefaultTheme, DarkTheme } from 'themes'
 
-import { Root } from './navigator'
+import { Root } from './navigators'
 
 export const Navigation = () => {
   const scheme = useColorScheme()

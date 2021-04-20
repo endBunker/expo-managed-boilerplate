@@ -1,2 +1,2 @@
 export * from './Navigation'
-export * from './navigator'
+export * from './navigators'
