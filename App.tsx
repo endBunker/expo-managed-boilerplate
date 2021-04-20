@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 
 import { Provider, initializeStore, IRoot } from 'models'
-import { Navigator } from 'navigators'
+import { Navigation } from 'navigation'
 
 if (__DEV__) {
   require('./config/reactotron-config')
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <Provider value={store}>
       <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-        <Navigator />
+        <Navigation />
       </SafeAreaProvider>
     </Provider>
   )

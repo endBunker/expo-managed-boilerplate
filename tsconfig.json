@@ -20,7 +20,7 @@
         "components/*"
       ],
       "@navigation": [
-        "navigators/*"
+        "navigation/*"
       ],
       "@models": [
         "models/*"
