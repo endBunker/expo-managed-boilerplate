@@ -1,5 +1,7 @@
 import { createContext, useContext } from 'react'
 import { onSnapshot } from 'mobx-state-tree'
+import { Platform } from 'react-native'
+
 import { Root, IRoot } from './Root'
 import { load, save } from '../utils/storage'
 
@@ -12,11 +14,6 @@ export async function initializeStore() {
   const storage = await load(ROOT_STATE_STORAGE_KEY)
   if (storage && Root.is(storage)) store = Root.create(storage)
   else store = Root.create(initialState)
-
-  if (__DEV__) {
-    const { Mst } = require('../config/reactotron-config')
-    Mst(store)
-  }
 
   onSnapshot(store, async (snapshot) => {
     await save(ROOT_STATE_STORAGE_KEY, snapshot)

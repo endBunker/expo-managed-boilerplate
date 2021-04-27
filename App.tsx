@@ -1,13 +1,9 @@
 import 'react-native-gesture-handler'
 import React, { useState, useEffect } from 'react'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
-
+import { Platform } from 'react-native'
 import { Provider, initializeStore, IRoot } from 'models'
 import { Navigation } from 'navigation'
-
-if (__DEV__) {
-  require('./config/reactotron-config')
-}
 
 export default function App() {
   const [store, setStore] = useState<IRoot | undefined>(undefined)
