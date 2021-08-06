@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
 import { useColorScheme } from 'react-native'
-import { DefaultTheme, DarkTheme } from 'themes'
+import { NavigationContainer } from '@react-navigation/native'
+import { NavigationDarkTheme, NavigationDefaultTheme, defaultTheme, darkTheme } from 'themes'
+import { ThemeProvider } from '@shopify/restyle'
 
 import { Root } from './navigators'
 
@@ -9,8 +10,10 @@ export const Navigation = () => {
   const scheme = useColorScheme()
 
   return (
-    <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Root />
-    </NavigationContainer>
+    <ThemeProvider theme={scheme === 'light' ? defaultTheme : darkTheme}>
+      <NavigationContainer theme={scheme === 'dark' ? NavigationDarkTheme : NavigationDefaultTheme}>
+        <Root />
+      </NavigationContainer>
+    </ThemeProvider>
   )
 }

@@ -19,6 +19,15 @@
       "@components": [
         "components/*"
       ],
+      "@config": [
+        "config/*"
+      ],
+      "@hooks": [
+        "hooks/*"
+      ],
+      "@i18n": [
+        "i18n/*"
+      ],
       "@navigation": [
         "navigation/*"
       ],
@@ -28,15 +37,12 @@
       "@screens": [
         "screens/*"
       ],
-      "@i18n": [
-        "i18n/*"
-      ],
-      "@storage": [
-        "utils/storage/*"
-      ],
       "@themes": [
         "themes/*"
-      ]
+      ],
+      "@utils": [
+        "utils/*"
+      ],
     }
   },
   "extends": "expo/tsconfig.base"

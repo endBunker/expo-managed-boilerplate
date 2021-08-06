@@ -1,30 +1,27 @@
-import { DefaultTheme, DarkTheme } from '@react-navigation/native'
+import { defaultTheme, darkTheme } from './themes'
 
-/**
- * Custom Themes
-const DefaultTheme = {
+const NavigationDefaultTheme = {
   dark: false,
   colors: {
-    primary: '',
-    background: '',
-    card: '',
-    text: '',
-    border: '',
-    notification: '',
+    primary: defaultTheme.colors.primary,
+    background: defaultTheme.colors.mainBackground,
+    card: defaultTheme.colors.cardPrimaryBackground,
+    text: defaultTheme.colors.textPrimaryColor,
+    border: defaultTheme.colors.border,
+    notification: defaultTheme.colors.textError,
   },
 }
 
-const DarkTheme = {
+const NavigationDarkTheme = {
   dark: true,
   colors: {
-    primary: '',
-    background: '',
-    card: '',
-    text: '',
-    border: '',
-    notification: '',
+    primary: darkTheme.colors.primary,
+    background: darkTheme.colors.mainBackground,
+    card: darkTheme.colors.cardPrimaryBackground,
+    text: darkTheme.colors.textPrimaryColor,
+    border: darkTheme.colors.border,
+    notification: darkTheme.colors.textError,
   },
 }
-*/
 
-export { DefaultTheme, DarkTheme }
+export { NavigationDefaultTheme, NavigationDarkTheme }
