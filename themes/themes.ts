@@ -1,5 +1,4 @@
 import { createTheme, BaseTheme } from '@shopify/restyle'
-import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 const palette = {
   redLight: '#FC5C65',
