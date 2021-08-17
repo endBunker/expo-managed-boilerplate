@@ -16,6 +16,7 @@ export default {
   },
   assetBundlePatterns: ['**/*'],
   ios: {
+    bundleIdentifier: 'com.bunker.boilerplate',
     supportsTablet: true,
   },
   android: {
@@ -24,6 +25,7 @@ export default {
       foregroundImage: './assets/adaptive-icon.png',
       backgroundColor: '#FFFFFF',
     },
+    jsEngine: 'hermes',
   },
   web: {
     favicon: './assets/favicon.png',
