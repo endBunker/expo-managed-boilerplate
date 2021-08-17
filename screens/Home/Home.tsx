@@ -1,15 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { useTheme } from '@shopify/restyle'
-import { ThemeTypes } from 'themes'
+import { StyleSheet, View } from 'react-native'
+import { Text } from 'components'
 import i18n from 'i18n'
 
 export function Home() {
-  const { colors } = useTheme<ThemeTypes>()
-
   return (
     <View style={styles.container}>
-      <Text style={{ color: colors.textPrimaryColor }} testID='welcome'>
+      <Text variant='subheader' testID='welcome'>
         {i18n.t('common.welcome')}
       </Text>
     </View>

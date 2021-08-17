@@ -1,4 +1,5 @@
-import { createTheme } from '@shopify/restyle'
+import { createTheme, BaseTheme } from '@shopify/restyle'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 const palette = {
   redLight: '#FC5C65',
@@ -14,7 +15,7 @@ const palette = {
   white: '#FFFFFF',
 }
 
-export const defaultTheme = createTheme({
+export const defaultTheme: BaseTheme = createTheme({
   colors: {
     primary: palette.redLight,
 
@@ -45,6 +46,25 @@ export const defaultTheme = createTheme({
   breakpoints: {
     phone: 0,
     tablet: 768,
+  },
+  textVariants: {
+    header: {
+      fontFamily: 'normal',
+      fontWeight: 'bold',
+      fontSize: 34,
+      color: 'textPrimaryColor',
+    },
+    subheader: {
+      fontFamily: 'normal',
+      fontWeight: '600',
+      fontSize: 28,
+      color: 'textPrimaryColor',
+    },
+    body: {
+      fontFamily: 'normal',
+      fontSize: 16,
+      color: 'textPrimaryColor',
+    },
   },
 })
 
